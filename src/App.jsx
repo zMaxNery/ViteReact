@@ -1,20 +1,13 @@
 import { useState } from "react";
+import './App.css'
 
 function App() {
-  const [ text, setText] = useState("");
-  const [ list, setList] = useState([]);
-
-  const addItem = () => {
-
-  };
+  const [ color, setColor] = useState();
 
   return (
-    <div>
-      <h1>{text}</h1>
-      <input 
-        type="text" 
-        onChange={(e) => setText(e.target.value)}
-      />
+    <div className="page">
+      <div className="card">
+      </div>
     </div>
   );
 }
