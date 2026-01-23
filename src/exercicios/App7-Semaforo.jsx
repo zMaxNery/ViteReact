@@ -1,5 +1,5 @@
 import { use, useState } from "react";
-import './App.css'
+import '/src/App.css'
 
 function App() {
   const [ light, setLight ] = useState("red");
