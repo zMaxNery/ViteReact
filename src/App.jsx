@@ -1,12 +1,7 @@
 import { use, useState } from "react";
 import './App.css'
-import Semaforo from "./exercicios/App7-Semaforo";
-import Contador from "./exercicios/App5-Contador";
 
-const myTasks = {
-  semaforo: <Semaforo />,
-  contador: <Contador />
-};
+const archive = import.meta.glob("./exercicios/*.jsx", { eager: true });
 
 function App() {
   const [ task, setTask ] = useState("");
@@ -14,12 +9,18 @@ function App() {
   return (
     <div className="page">
       <div className="card">
-        <button onClick={() => setTask("")}>Sair</button>
-        <button onClick={() => setTask("semaforo")}>Semaforo</button>
-        <button onClick={() => setTask("contador")}>Contador</button>
+        <div>
+          <button>Voltar</button>
+        </div>
+        {/* {Object.keys(myTasks).map((item) => (
+          <button 
+            key={item}
+            onClick={() => setTask(item)}
+          >{item}</button>
+        ))}
         <div className="content">
           { myTasks[task] }
-        </div>
+        </div> */}
       </div>
     </div>
   );
