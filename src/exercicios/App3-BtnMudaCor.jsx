@@ -1,5 +1,4 @@
 import { useState } from "react";
-import '/src/App.css'
 
 function App() {
   const [ color, setColor] = useState("white");
@@ -23,37 +22,35 @@ function App() {
   const colorWhite = () => {setColor("white")};
 
   return (
-    <div className="page">
-      <div className="card">
-        <div
-          style={{
-            margin: "20px",
-            width: "200px",
-            height: "200px",
-            backgroundColor: color
-          }}
-        ></div>
-        <button
-          onClick={btnBlue}
-          style={{
-            width: "100px",
-            height: "25px",
-            color: "white",
-            fontWeight: "bold",
-            backgroundColor: "blue",
-          }}
-        >Azul</button>
-        <button
-          onClick={btnRed}
-          style={{
-            width: "100px",
-            height: "25px",
-            color: "white",
-            fontWeight: "bold",
-            backgroundColor: "red",
-          }}
-        >Vermelho</button>
-      </div>
+    <div className="area-task">
+      <div
+        style={{
+          margin: "20px",
+          width: "200px",
+          height: "200px",
+          backgroundColor: color
+        }}
+      ></div>
+      <button
+        onClick={btnBlue}
+        style={{
+          width: "100px",
+          height: "25px",
+          color: "white",
+          fontWeight: "bold",
+          backgroundColor: "blue",
+        }}
+      >Azul</button>
+      <button
+        onClick={btnRed}
+        style={{
+          width: "100px",
+          height: "25px",
+          color: "white",
+          fontWeight: "bold",
+          backgroundColor: "red",
+        }}
+      >Vermelho</button>
     </div>
   );
 }

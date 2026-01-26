@@ -1,5 +1,4 @@
 import { use, useState } from "react";
-import '/src/App.css'
 
 function App() {
   const [ light, setLight ] = useState("red");
@@ -13,21 +12,20 @@ function App() {
   };
 
   return (
-    <div className="page">
-      <div className="card">
-        <button 
-          onClick={nextColor}
-        >Avançar Sinal</button>
-        <div 
-          style={{
-            backgroundColor: light,
-            margin: "30px",
-            width: "200px",
-            height: "200px",
-            borderStyle: "double",
-            borderColor: "black",
-            borderRadius: "50%"
-        }}></div>
+    <div className="area-task">
+      <button 
+        onClick={nextColor}
+      >Avançar Sinal</button>
+      <div 
+        style={{
+          backgroundColor: light,
+          margin: "30px",
+          width: "200px",
+          height: "200px",
+          borderStyle: "double",
+          borderColor: "black",
+          borderRadius: "50%"
+        }}>
       </div>
     </div>
   );

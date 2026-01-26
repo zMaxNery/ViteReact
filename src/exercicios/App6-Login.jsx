@@ -1,5 +1,4 @@
 import { use, useState } from "react";
-import '/src/App.css'
 
 function App() {
   const [ user, setUser ] = useState({ name: "Visitante", status: "Offline" });
@@ -13,24 +12,22 @@ function App() {
   };  
 
   return (
-    <div className="page">
-      <div className="card">
-        <h2>Usuário: {user.name}</h2>
-        <h2>Status: {user.status}</h2>
-        { user.name === "Visitante" ? <button 
-          onClick={isBtnLog}
-          style={{
-            width: "60px",
-            height: "20px"
-          }}
-        >Entrar</button> : <button 
-          onClick={isBtnLog}
-          style={{
-            width: "60px",
-            height: "20px"
-          }}
-        >Sair</button> }
-      </div>
+    <div className="area-task">
+      <h2>Usuário: {user.name}</h2>
+      <h2>Status: {user.status}</h2>
+      { user.name === "Visitante" ? <button 
+        onClick={isBtnLog}
+        style={{
+          width: "60px",
+          height: "20px"
+        }}
+      >Entrar</button> : <button 
+        onClick={isBtnLog}
+        style={{
+          width: "60px",
+          height: "20px"
+        }}
+      >Sair</button> }
     </div>
   );
 }

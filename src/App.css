@@ -18,8 +18,14 @@
 .card {
   margin: 20px;
   padding: 20px;
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 600px;
   background-color: white;
   border-radius: 10px;
+}
+.area-task {
+  margin: 10px;
+  border-radius: 10px;
+  border-style: double;
+  border-color: black;
 }

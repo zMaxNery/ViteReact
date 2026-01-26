@@ -8,7 +8,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="area-task">
       <h1>{nome}</h1>
       <button onClick={mudarNome}>Mudar texto</button>
     </div>

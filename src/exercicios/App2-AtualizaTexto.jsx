@@ -4,7 +4,7 @@ function App() {
   const [ texto, setTexto] = useState("");
 
   return (
-    <div>
+    <div className="area-task">
       <h1>{texto}</h1>
       <input 
         type="text" 
